@@ -66,7 +66,7 @@ static void DrawSaveStatePage()
 {
 	ImGui_Impl3DS_NewFrame();
 	ImGui::SetNextWindowPos( ImVec2(0, 0) );
-	ImGui::SetNextWindowSize( ImVec2(320, 240) );
+	ImGui::SetNextWindowSize( ImVec2(400, 240) );
 
 	ImGui::Begin("Save state", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoBringToFrontOnFocus);
 
@@ -96,7 +96,7 @@ static void DrawLoadStatePage()
 {
 	ImGui_Impl3DS_NewFrame();
 	ImGui::SetNextWindowPos( ImVec2(0, 0) );
-	ImGui::SetNextWindowSize( ImVec2(320, 240) );
+	ImGui::SetNextWindowSize( ImVec2(400, 240) );
 
 	ImGui::Begin("Load state", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoBringToFrontOnFocus);
 
@@ -160,7 +160,7 @@ bool UI::DrawOptionsPage(RomID mRomID)
 
 	ImGui_Impl3DS_NewFrame();
 	ImGui::SetNextWindowPos( ImVec2(0, 0) );
-	ImGui::SetNextWindowSize( ImVec2(320, 240) );
+	ImGui::SetNextWindowSize( ImVec2(400, 240) );
 
 	ImGui::Begin("Options", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoBringToFrontOnFocus);
 	ImGui::PushItemWidth(-1);
@@ -328,7 +328,7 @@ static void DrawMainPage()
 	ImGui_Impl3DS_NewFrame();
 
 	ImGui::SetNextWindowPos( ImVec2(0, 0) );
-	ImGui::SetNextWindowSize( ImVec2(320, 240) );
+	ImGui::SetNextWindowSize( ImVec2(400, 240) );
 
 	ImGui::Begin("Menu", nullptr, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoBringToFrontOnFocus);
 
