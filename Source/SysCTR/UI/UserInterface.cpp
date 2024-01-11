@@ -23,11 +23,11 @@ void UI::Initialize()
 
 void UI::RestoreRenderState()
 {
-	pglSelectScreen(GFX_TOP, GFX_LEFT);
+	pglSelectScreen(GFX_BOTTOM, GFX_LEFT);
 
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-	glViewport(0,0,400,240);
+	glViewport(0,0,320,240);
 	
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
@@ -43,7 +43,7 @@ void UI::RestoreRenderState()
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 
 	glMatrixMode(GL_PROJECTION);
-	glOrtho(0, 400, 240, 0, -1, 1);
+	glOrtho(0, 320, 240, 0, -1, 1);
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
