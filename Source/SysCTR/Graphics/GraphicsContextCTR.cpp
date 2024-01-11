@@ -112,7 +112,7 @@ bool IGraphicsContext::Initialise()
 {
 	mInitialised = true;
 
-	pglSelectScreen(GFX_TOP, GFX_LEFT);
+	pglSelectScreen(GFX_BOTTOM, GFX_LEFT);
 	ClearAllSurfaces();
 
 	return true;
@@ -128,7 +128,7 @@ void IGraphicsContext::ClearAllSurfaces()
 
 void IGraphicsContext::ClearToBlack()
 {
-	glViewport(0,0,400,240);
+	glViewport(0,0,320,240);
 	glDisable(GL_SCISSOR_TEST);
 
 	glDepthMask(GL_TRUE);
