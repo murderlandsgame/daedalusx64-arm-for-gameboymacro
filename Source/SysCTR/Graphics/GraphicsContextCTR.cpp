@@ -19,7 +19,7 @@
 
 extern void HandleEndOfFrame();
 
-#define SCR_WIDTH 400
+#define SCR_WIDTH 320
 #define SCR_HEIGHT 240
 
 static bool newFrame = true;
