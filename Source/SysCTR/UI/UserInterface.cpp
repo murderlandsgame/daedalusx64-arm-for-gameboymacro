@@ -43,7 +43,7 @@ void UI::RestoreRenderState()
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 
 	glMatrixMode(GL_PROJECTION);
-	glOrtho(0, 320, 240, 0, -1, 1);
+	glOrtho(0, 400, 240, 0, -1, 1);
 
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
