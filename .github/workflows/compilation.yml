@@ -186,7 +186,8 @@ jobs:
         with:
           name: daedalusX64-CTR
           path: daedalusX64-CTR.tar.gz
-                - name: Upload artifacts
+      
+      - name: Upload artifacts
         if: ${{ success() }}
         uses: actions/upload-artifact@v4
         with:
