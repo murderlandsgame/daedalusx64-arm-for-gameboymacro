@@ -379,6 +379,8 @@ static void DrawMainPage()
 
 void UI::DrawInGameMenu()
 {
+	
+	pglSelectScreen(GFX_TOP, GFX_LEFT);
 	UI::RestoreRenderState();
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -391,5 +393,4 @@ void UI::DrawInGameMenu()
 		case 3: DrawOptionsPage(g_ROM.mRomID); break;
 	}
 
-	pglSelectScreen(GFX_TOP, GFX_LEFT);
 }
