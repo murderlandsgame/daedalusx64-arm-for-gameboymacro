@@ -88,7 +88,7 @@ template<> bool CSingleton< CGraphicsContext >::Create()
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-uint32_t gMaxVertices = 30000;
+uint32_t gMaxVertices = 66000;
 
 IGraphicsContext::IGraphicsContext() : mInitialised(false), mDumpNextScreen(false)
 {	
