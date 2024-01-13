@@ -35,7 +35,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 extern u32 gSoundSync;
 
-static const u32 DESIRED_OUTPUT_FREQUENCY = 45666;
+static const u32 DESIRED_OUTPUT_FREQUENCY = 44100;
 
 static const u32 CTR_BUFFER_SIZE  = 1024 * 2;
 static const u32 CTR_BUFFER_COUNT = 6;
