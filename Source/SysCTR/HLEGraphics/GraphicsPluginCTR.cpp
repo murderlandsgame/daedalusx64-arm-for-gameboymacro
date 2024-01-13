@@ -42,7 +42,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 extern bool gFrameskipActive;
 
-u32		gSoundSync = 45666;
+u32		gSoundSync = 44100;
 u32		gVISyncRate = 1500;
 bool	gTakeScreenshot = false;
 bool	gTakeScreenshotSS = false;
