@@ -229,9 +229,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define VI_CTRL_DITHER_FILTER_ON	0x10000
 
 #define N64_CPU_OC_UC 2
-#define VI_NTSC_CLOCK		((146045436/8)*(N64_CPU_OC_UC))
-#define VI_PAL_CLOCK		((148969590/8)*(N64_CPU_OC_UC))
-#define VI_MPAL_CLOCK		((145884948/8)*(N64_CPU_OC_UC))
+#define VI_NTSC_CLOCK		((146045436/4)*(N64_CPU_OC_UC))
+#define VI_PAL_CLOCK		((148969590/4)*(N64_CPU_OC_UC))
+#define VI_MPAL_CLOCK		((145884948/4)*(N64_CPU_OC_UC))
 
 
 #define VI_LAST_REG	VI_Y_SCALE_REG
@@ -256,14 +256,14 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define AI_MAX_BIT_RATE         16
 #define AI_MIN_BIT_RATE         2
 
-#define AI_NTSC_MAX_FREQ        368000
-#define AI_NTSC_MIN_FREQ        3000
+#define AI_NTSC_MAX_FREQ        666666
+#define AI_NTSC_MIN_FREQ        66666
 
-#define AI_PAL_MAX_FREQ         376000
-#define AI_PAL_MIN_FREQ         3050
+#define AI_PAL_MAX_FREQ         666666
+#define AI_PAL_MIN_FREQ         66666
 
-#define AI_MPAL_MAX_FREQ        368000
-#define AI_MPAL_MIN_FREQ        3000
+#define AI_MPAL_MAX_FREQ        666666
+#define AI_MPAL_MIN_FREQ        66666
 
 
 #define AI_LAST_REG	AI_BITRATE_REG
