@@ -172,16 +172,14 @@ bool UI::DrawOptionsPage(RomID mRomID)
 	{
 
         const char* clocks[NUM_CLOCK_VALUES] /*EClockValue clockOptionsEClock[NUM_CLOCK_VALUES]*/ = { "CLOCK_DEFAULT", "CLOCK_DOWN", "CLOCK_UP", "CLOCK_LOWER", "CLOCK_HIGHER", "CLOCK_MUCHLOWER", "CLOCK_MUCHHIGHER", "CLOCK_WAYLOWER", "CLOCK_WAYHIGHER", "CLOCK_1MHZ", "CLOCK_MAX", "CLOCK_WTF" };
-        //float clockOptions[NUM_CLOCK_VALUES] ;
 
-        //for (int i=0; i< NUM_CLOCK_VALUES; i++) clockOptions[i] = (float)clockOptionsEClock[i];
-         //for (int i=0; i< NUM_CLOCK_VALUES; i++) clocks[i] = (int)clockOptions[i] + "";
 
         ImGui::Text("3DS Ticks Per Second (Hz)");
         //LoadRomPreferences(mRomID);
         currentSelection = romPreferences.Clock;
         ImGui::Combo("##clkTk", &currentSelection, clocks, NUM_CLOCK_VALUES, -1);
         romPreferences.Clock = EClockValue(currentSelection);
+	currentSelection = romPreferences.Clock;
 
         ImGui::Spacing();
 
