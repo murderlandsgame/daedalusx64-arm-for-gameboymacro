@@ -35,7 +35,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 extern u32 gSoundSync;
 
-static const u32 DESIRED_OUTPUT_FREQUENCY = 40000;
+static const u32 DESIRED_OUTPUT_FREQUENCY = 66666;
 
 static const u32 CTR_BUFFER_SIZE  = 1024 * 2;
 static const u32 CTR_BUFFER_COUNT = 6;
@@ -115,7 +115,7 @@ static void AudioExit()
 
 AudioOutput::AudioOutput()
 :	mAudioPlaying( false )
-,	mFrequency( 40000 )
+,	mFrequency( 66666 )
 {
 	mAudioBuffer = new CAudioBuffer( CTR_BUFFER_SIZE );
 }
