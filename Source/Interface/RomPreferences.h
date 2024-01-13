@@ -95,7 +95,7 @@ struct SRomPreferences
 	u32							SpeedSyncEnabled;
 	u32							ControllerIndex;
 //	u32							PAD1;	//Some Bug in GCC that require to pad the struct some times...(?)
-
+	bool Clock;
 	SRomPreferences();
 
 	void		Reset();
