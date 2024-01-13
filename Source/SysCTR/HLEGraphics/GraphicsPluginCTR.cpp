@@ -204,7 +204,7 @@ void CGraphicsPluginImpl::UpdateScreen()
 		{
 			const f32 inv_Fsync = 1.0f / Fsync;
 
-			gSoundSync  = (u32)(44100.0f * inv_Fsync);
+			gSoundSync  = (u32)(40000.0f * inv_Fsync);
 			gVISyncRate = (u32)( 1500.0f * inv_Fsync);
 
 			if( gVISyncRate > 4000 )
