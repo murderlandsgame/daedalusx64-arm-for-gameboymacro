@@ -22,7 +22,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include <3ds.h>
 
-#define TICKS_PER_SEC 804370440.0 //new 2/3ds(XL) ticks use og source number for og 2/3ds(xl)
+#define TICKS_PER_SEC 804370440.0/6.66 //new 2/3ds(XL) ticks use og source number for og 2/3ds(xl)
 
 namespace NTiming {
 
