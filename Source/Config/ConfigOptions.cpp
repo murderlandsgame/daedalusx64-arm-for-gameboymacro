@@ -25,8 +25,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // developing. Generally they will be changed by the ini file
 // settings.
 
-#include "stdafx.h"
-#include "ConfigOptions.h"
 
 float gClock = 999666999;
 #include "Config/ConfigOptions.h"
