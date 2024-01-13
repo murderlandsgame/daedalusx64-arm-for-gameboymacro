@@ -38,9 +38,9 @@ static void *			gAuxSyncArg = NULL;
 
 static const u32		gTvFrequencies[] =
 {
-	50,		// OS_TV_PAL,
-	60,		// OS_TV_NTSC,
-	50		// OS_TV_MPAL
+	250,		// OS_TV_PAL,
+	300,		// OS_TV_NTSC,
+	250		// OS_TV_MPAL
 };
 
 void FramerateLimiter_SetAuxillarySyncFunction(FramerateSyncFn fn, void * arg)
