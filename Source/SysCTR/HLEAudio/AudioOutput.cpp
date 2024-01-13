@@ -115,7 +115,7 @@ static void AudioExit()
 
 AudioOutput::AudioOutput()
 :	mAudioPlaying( false )
-,	mFrequency( 45666 )
+,	mFrequency( 44100 )
 {
 	mAudioBuffer = new CAudioBuffer( CTR_BUFFER_SIZE );
 }
