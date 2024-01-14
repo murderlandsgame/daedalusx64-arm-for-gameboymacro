@@ -398,12 +398,12 @@ void UI::DrawInGameMenu()
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	switch(currentPage)
-	{
-		case 0: DrawMainPage(); break;
-		case 1: DrawSaveStatePage(); break;
-		case 2: DrawLoadStatePage(); break;
-		case 3: DrawOptionsPage(g_ROM.mRomID); break;
-	}
+	//switch(currentPage)
+	//{
+	//	case 0: DrawMainPage(); break;
+///		case 1: DrawSaveStatePage(); break;
+//		case 2: DrawLoadStatePage(); break;
+//		case 3: DrawOptionsPage(g_ROM.mRomID); break;
+//	}
 
 }
