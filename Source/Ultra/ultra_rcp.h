@@ -228,7 +228,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define VI_CTRL_ANTIALIAS_MASK		0x00300
 #define VI_CTRL_DITHER_FILTER_ON	0x10000
 
-#define N64_CPU_OC_UC 66
+#define N64_CPU_OC_UC 6
 #define VI_NTSC_CLOCK		((146045436/4)*(N64_CPU_OC_UC))
 #define VI_PAL_CLOCK		((148969590/4)*(N64_CPU_OC_UC))
 #define VI_MPAL_CLOCK		((145884948/4)*(N64_CPU_OC_UC))
