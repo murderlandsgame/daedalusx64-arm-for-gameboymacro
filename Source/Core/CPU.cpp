@@ -90,7 +90,7 @@ enum ESaveStateOperation
 
 static ESaveStateOperation		gSaveStateOperation(SSO_NONE);
 
-const  u32			kInitialVIInterruptCycles = 15625;
+const  u32			kInitialVIInterruptCycles = 66666;
 static u32			gVerticalInterrupts = 0;
 static u32			VI_INTR_CYCLES(kInitialVIInterruptCycles);
 
@@ -633,11 +633,11 @@ void CPU_HANDLE_COUNT_INTERRUPT()
 	{
 	case CPU_EVENT_VBL:
 		{
-			//Todo: Work on VI_INTR_CYCLES should be 15625 * (60/Real game FPS)
+			//Todo: Work on VI_INTR_CYCLES should be 66666 * (60/Real game FPS)
 			u32 vertical_sync_reg = Memory_VI_GetRegister( VI_V_SYNC_REG );
 			if (vertical_sync_reg == 0)
 			{
-				VI_INTR_CYCLES = 15625;
+				VI_INTR_CYCLES = 66666;
 			}
 			else
 			{
