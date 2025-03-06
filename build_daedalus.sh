@@ -36,7 +36,5 @@ case "$1" in
 esac
     # Use the custom define to do initial build then parse cmake after
     $CMAKE $CMAKEDEFINES -S . -B build
-    cd Source/Core
-    cmake . -B build -DCMAKE_TOOLCHAIN_FILE=../../Tools/3dstoolchain.cmake
-    cmake --build build -j${PROC_NR}
+    cmake --build build 
     cmake --install build --prefix $PWD
