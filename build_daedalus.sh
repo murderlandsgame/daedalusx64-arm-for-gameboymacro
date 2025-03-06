@@ -26,7 +26,7 @@ case "$1" in
     CMAKE=psp-cmake
     ;;
     CTR)
-    CMAKE="cmake -DCMAKE_TOOLCHAIN_FILE="$DEVKITPRO/cmake/3DS.cmake""
+    CMAKE="cmake -DCMAKE_TOOLCHAIN_FILE=$DEVKITPRO/cmake/3DS.cmake"
     CMAKEDEFINES+="-DCTR=1"
     ;;
     *)
